@@ -42,11 +42,20 @@ export function Hero() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-border sm:aspect-[16/10] lg:aspect-[21/9]">
             <Image
               src="/images/hero-athlete.png"
+              alt=""
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="scale-105 object-cover blur-sm"
+              aria-hidden="true"
+            />
+            <Image
+              src="/images/hero-athlete.png"
               alt="Спортсмен на тренировке"
               fill
               priority
               sizes="(max-width: 1280px) 100vw, 1280px"
-              className="object-cover"
+              className="object-contain"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
 
